@@ -2,7 +2,7 @@ variable "subnet_vpc_id" { }
 variable "subnet_cidr_block" { }
 variable "subnet_pub_ip" { default = false }
 variable "subnet_az" { }
-varialbe "subnet_tag_name" { }
+variable "subnet_tag_name" { }
 
 resource "aws_subnet" "ec2_subnet" {
   vpc_id                  = "${var.subnet_vpc_id}"
